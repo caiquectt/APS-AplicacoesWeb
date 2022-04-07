@@ -22,8 +22,8 @@ p {
 .logo {
   display: block;
   margin: 0;
-  padding: 20px;
-  padding-left: 35px;
+  padding: 20px 0px 20px 30px;
+  width: 200px;
 }
 
 .header {
@@ -41,12 +41,13 @@ p {
 .menu {
   display: flex;
   align-items: center;
-  margin-left: 600px;
-  padding: 0;
+  justify-content: end;
+  width: 100%;
+  padding: 0px 30px 0px 0px;
   gap: 40px;
 }
 
-.menu a {
+.botao {
   display: flex;
   text-decoration: none;
   align-items: center;
@@ -54,13 +55,15 @@ p {
   color: black;
   background-color: #f5f3bb;
   border-radius: 4px;
-  width: 100px;
-  height: 50px;
+  width: 90px;
+  height: 40px;
+  font-size: 13px;
+  font-weight: bold;
 }
 
-.menu p {
-  font-size: 16px;
-  font-weight: bold;
+.botao:hover {
+  transition-duration: 0.5s;
+  background-color: #c0bf93;
 }
 
 .container {
@@ -73,16 +76,19 @@ p {
   justify-self: center;
 }
 
-.inicio h1 {
+.titulo {
   font-size: 50px;
+  text-align: center;
 }
 
-.botao {
-  display: block;
-  text-decoration: none;
-  background-color: #f5f3bb;
-  padding: 15px 20px;
-  color: black;
+.introducao {
+  width: 500px;
+  text-align: center;
+  justify-self: center;
+}
+
+.inicio .botao {
+  align-content: center;
   width: 150px;
   justify-self: center;
 }
@@ -152,10 +158,16 @@ iframe {
   font-size: 15px;
   justify-self: end;
   align-self: end;
+  color: white;
 }
 
 .link a {
   color: white;
+}
+
+.link:hover {
+  transition-duration: 0.5s;
+  background-color: #724022;
 }
 
 .img-container {
@@ -187,6 +199,12 @@ iframe {
   background: transparent;
   border-color: transparent;
   cursor: pointer;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  transition-duration: 0.5s;
+  background-color: #724022;
 }
 
 .rodape {
